@@ -7,10 +7,16 @@ workflows:
     scripts:
       - name: Get packages
         script: flutter pub get
+
+      - name: Create Android platform
+        script: flutter create .
+
       - name: Build APK
         script: flutter build apk --release
+
       - name: Build AAB
         script: flutter build appbundle --release
+
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
       - build/app/outputs/bundle/release/app-release.aab
