@@ -1,2 +1,4 @@
-# 30-dias-sem-fumar
-30 dias sem fumar - MVP
+README.md
+pubspec.yaml
+codemagic.yaml
+lib/
